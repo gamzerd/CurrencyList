@@ -1,5 +1,5 @@
 //
-//  CurrencyRequest.swift
+//  CurrencyParams.swift
 //  CurrencyList
 //
 //  Created by Gamze on 11/21/18.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CurrencyRequest: Encodable {
+struct CurrencyParams: Encodable {
     var base: String
     
     init(base: String) {

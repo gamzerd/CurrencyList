@@ -12,6 +12,6 @@ class CurrencyData: Codable {
     
     var base: String = ""
     var date: String = ""
-    var rates: Dictionary = [String: Double]()
+    var rates: Dictionary = [String: Float]()
     
 }

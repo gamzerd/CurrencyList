@@ -26,9 +26,7 @@ class Service: NSObject {
         var paramMap: [String:String] = [:]
         do {
             let encodedData = try JSONEncoder().encode(params)
-            print(String(data: encodedData, encoding: .utf8)!)
             paramMap = try JSONDecoder().decode([String:String].self, from: encodedData)
-            print(paramMap)
         } catch {
            // return error
             callback(nil, error)
