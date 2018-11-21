@@ -14,6 +14,11 @@
 		FAF81F6021A4B206009C33D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF81F5E21A4B206009C33D5 /* LaunchScreen.storyboard */; };
 		FAF81F6B21A4B206009C33D5 /* CurrencyListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF81F6A21A4B206009C33D5 /* CurrencyListTests.swift */; };
 		FAF81F7621A4B206009C33D5 /* CurrencyListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF81F7521A4B206009C33D5 /* CurrencyListUITests.swift */; };
+		FAF81F8721A4D97F009C33D5 /* CurrencyResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF81F8621A4D97F009C33D5 /* CurrencyResponse.swift */; };
+		FAF81F8921A4D9F0009C33D5 /* CurrencyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF81F8821A4D9F0009C33D5 /* CurrencyRequest.swift */; };
+		FAF81F8C21A4DA70009C33D5 /* CurrencyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF81F8B21A4DA70009C33D5 /* CurrencyData.swift */; };
+		FAF81F8E21A4DECE009C33D5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF81F8D21A4DECE009C33D5 /* Service.swift */; };
+		FAF81F9021A4DF16009C33D5 /* RevolutDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF81F8F21A4DF16009C33D5 /* RevolutDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,11 @@
 		FAF81F7121A4B206009C33D5 /* CurrencyListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF81F7521A4B206009C33D5 /* CurrencyListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListUITests.swift; sourceTree = "<group>"; };
 		FAF81F7721A4B206009C33D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAF81F8621A4D97F009C33D5 /* CurrencyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyResponse.swift; sourceTree = "<group>"; };
+		FAF81F8821A4D9F0009C33D5 /* CurrencyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyRequest.swift; sourceTree = "<group>"; };
+		FAF81F8B21A4DA70009C33D5 /* CurrencyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyData.swift; sourceTree = "<group>"; };
+		FAF81F8D21A4DECE009C33D5 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		FAF81F8F21A4DF16009C33D5 /* RevolutDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevolutDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,9 @@
 		FAF81F5421A4B204009C33D5 /* CurrencyList */ = {
 			isa = PBXGroup;
 			children = (
+				FAF81F8A21A4DA57009C33D5 /* Models */,
+				FAF81F8421A4D322009C33D5 /* Network */,
+				FAF81F8321A4D30E009C33D5 /* View Models */,
 				FAF81F5521A4B204009C33D5 /* AppDelegate.swift */,
 				FAF81F5721A4B204009C33D5 /* ViewController.swift */,
 				FAF81F5921A4B204009C33D5 /* Main.storyboard */,
@@ -123,6 +136,40 @@
 				FAF81F7721A4B206009C33D5 /* Info.plist */,
 			);
 			path = CurrencyListUITests;
+			sourceTree = "<group>";
+		};
+		FAF81F8321A4D30E009C33D5 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		FAF81F8421A4D322009C33D5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FAF81F8521A4D8A6009C33D5 /* Models */,
+				FAF81F8D21A4DECE009C33D5 /* Service.swift */,
+				FAF81F8F21A4DF16009C33D5 /* RevolutDataSource.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FAF81F8521A4D8A6009C33D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAF81F8621A4D97F009C33D5 /* CurrencyResponse.swift */,
+				FAF81F8821A4D9F0009C33D5 /* CurrencyRequest.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAF81F8A21A4DA57009C33D5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FAF81F8B21A4DA70009C33D5 /* CurrencyData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +303,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAF81F9021A4DF16009C33D5 /* RevolutDataSource.swift in Sources */,
+				FAF81F8921A4D9F0009C33D5 /* CurrencyRequest.swift in Sources */,
 				FAF81F5821A4B204009C33D5 /* ViewController.swift in Sources */,
+				FAF81F8721A4D97F009C33D5 /* CurrencyResponse.swift in Sources */,
+				FAF81F8C21A4DA70009C33D5 /* CurrencyData.swift in Sources */,
 				FAF81F5621A4B204009C33D5 /* AppDelegate.swift in Sources */,
+				FAF81F8E21A4DECE009C33D5 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
