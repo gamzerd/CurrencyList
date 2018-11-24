@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FAF81F5621A4B204009C33D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF81F5521A4B204009C33D5 /* AppDelegate.swift */; };
-		FAF81F5821A4B204009C33D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF81F5721A4B204009C33D5 /* ViewController.swift */; };
+		FAF81F5821A4B204009C33D5 /* CurrenctListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF81F5721A4B204009C33D5 /* CurrenctListTableViewController.swift */; };
 		FAF81F5B21A4B204009C33D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF81F5921A4B204009C33D5 /* Main.storyboard */; };
 		FAF81F5D21A4B206009C33D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAF81F5C21A4B206009C33D5 /* Assets.xcassets */; };
 		FAF81F6021A4B206009C33D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAF81F5E21A4B206009C33D5 /* LaunchScreen.storyboard */; };
@@ -21,6 +21,7 @@
 		FAF81F9021A4DF16009C33D5 /* RevolutDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF81F8F21A4DF16009C33D5 /* RevolutDataSource.swift */; };
 		FAF81F9221A58AEC009C33D5 /* CurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF81F9121A58AEC009C33D5 /* CurrencyViewModel.swift */; };
 		FAF81F9421A5A61F009C33D5 /* Rate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF81F9321A5A61F009C33D5 /* Rate.swift */; };
+		FAF81F9821A6313B009C33D5 /* CurrencyListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAF81F9721A6313B009C33D5 /* CurrencyListTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +44,7 @@
 /* Begin PBXFileReference section */
 		FAF81F5221A4B204009C33D5 /* CurrencyList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CurrencyList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAF81F5521A4B204009C33D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAF81F5721A4B204009C33D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAF81F5721A4B204009C33D5 /* CurrenctListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenctListTableViewController.swift; sourceTree = "<group>"; };
 		FAF81F5A21A4B204009C33D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAF81F5C21A4B206009C33D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAF81F5F21A4B206009C33D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +62,7 @@
 		FAF81F8F21A4DF16009C33D5 /* RevolutDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevolutDataSource.swift; sourceTree = "<group>"; };
 		FAF81F9121A58AEC009C33D5 /* CurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyViewModel.swift; sourceTree = "<group>"; };
 		FAF81F9321A5A61F009C33D5 /* Rate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rate.swift; sourceTree = "<group>"; };
+		FAF81F9721A6313B009C33D5 /* CurrencyListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,11 +113,11 @@
 		FAF81F5421A4B204009C33D5 /* CurrencyList */ = {
 			isa = PBXGroup;
 			children = (
+				FAF81F9521A625CF009C33D5 /* Modules */,
 				FAF81F8A21A4DA57009C33D5 /* Models */,
 				FAF81F8421A4D322009C33D5 /* Network */,
 				FAF81F8321A4D30E009C33D5 /* View Models */,
 				FAF81F5521A4B204009C33D5 /* AppDelegate.swift */,
-				FAF81F5721A4B204009C33D5 /* ViewController.swift */,
 				FAF81F5921A4B204009C33D5 /* Main.storyboard */,
 				FAF81F5C21A4B206009C33D5 /* Assets.xcassets */,
 				FAF81F5E21A4B206009C33D5 /* LaunchScreen.storyboard */,
@@ -176,6 +178,23 @@
 				FAF81F9321A5A61F009C33D5 /* Rate.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FAF81F9521A625CF009C33D5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				FAF81F9621A625DE009C33D5 /* CurrencyList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		FAF81F9621A625DE009C33D5 /* CurrencyList */ = {
+			isa = PBXGroup;
+			children = (
+				FAF81F5721A4B204009C33D5 /* CurrenctListTableViewController.swift */,
+				FAF81F9721A6313B009C33D5 /* CurrencyListTableViewCell.swift */,
+			);
+			path = CurrencyList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,11 +331,12 @@
 				FAF81F9021A4DF16009C33D5 /* RevolutDataSource.swift in Sources */,
 				FAF81F9221A58AEC009C33D5 /* CurrencyViewModel.swift in Sources */,
 				FAF81F8921A4D9F0009C33D5 /* CurrencyParams.swift in Sources */,
-				FAF81F5821A4B204009C33D5 /* ViewController.swift in Sources */,
+				FAF81F5821A4B204009C33D5 /* CurrenctListTableViewController.swift in Sources */,
 				FAF81F8721A4D97F009C33D5 /* CurrencyResponse.swift in Sources */,
 				FAF81F8C21A4DA70009C33D5 /* CurrencyData.swift in Sources */,
 				FAF81F9421A5A61F009C33D5 /* Rate.swift in Sources */,
 				FAF81F5621A4B204009C33D5 /* AppDelegate.swift in Sources */,
+				FAF81F9821A6313B009C33D5 /* CurrencyListTableViewCell.swift in Sources */,
 				FAF81F8E21A4DECE009C33D5 /* Service.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
