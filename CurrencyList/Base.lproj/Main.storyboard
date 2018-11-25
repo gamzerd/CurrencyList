@@ -11,7 +11,7 @@
         <!--Currency List Table View Controller-->
         <scene sceneID="pzh-6t-RIj">
             <objects>
-                <tableViewController id="1zi-0W-I6M" customClass="CurrencyListTableViewController" customModule="CurrencyList" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="CurrencyListTableViewControllerID" id="1zi-0W-I6M" customClass="CurrencyListTableViewController" customModule="CurrencyList" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yuA-5S-SzU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,8 +30,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="6,75" placeholder="0" textAlignment="right" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="5eR-TN-5gM">
-                                            <rect key="frame" x="229" y="9" width="111" height="24"/>
+                                        <textField opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="6,75" borderStyle="roundedRect" placeholder="0" textAlignment="right" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="5eR-TN-5gM">
+                                            <rect key="frame" x="227.5" y="7" width="142.5" height="30"/>
                                             <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
                                             <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
@@ -41,8 +41,9 @@
                                         <constraint firstItem="5eR-TN-5gM" firstAttribute="leading" relation="lessThanOrEqual" secondItem="mRF-4q-zbM" secondAttribute="trailing" constant="150" id="4Q8-5L-DiQ"/>
                                         <constraint firstItem="mRF-4q-zbM" firstAttribute="leading" secondItem="FNi-ao-flp" secondAttribute="leading" constant="42" id="DLP-pf-cDM"/>
                                         <constraint firstItem="mRF-4q-zbM" firstAttribute="centerY" secondItem="FNi-ao-flp" secondAttribute="centerY" id="Dbg-M4-FCK"/>
-                                        <constraint firstAttribute="trailing" secondItem="5eR-TN-5gM" secondAttribute="trailing" constant="35" id="JJD-9C-gTX"/>
-                                        <constraint firstAttribute="bottom" secondItem="5eR-TN-5gM" secondAttribute="bottom" constant="10.5" id="xdB-A9-kEh"/>
+                                        <constraint firstAttribute="trailing" secondItem="5eR-TN-5gM" secondAttribute="trailing" constant="5" id="JJD-9C-gTX"/>
+                                        <constraint firstItem="5eR-TN-5gM" firstAttribute="centerY" secondItem="FNi-ao-flp" secondAttribute="centerY" id="tN9-uS-OQa"/>
+                                        <constraint firstItem="5eR-TN-5gM" firstAttribute="width" secondItem="FNi-ao-flp" secondAttribute="height" multiplier="141:43" id="v9O-Vr-4Y3"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>

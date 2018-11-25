@@ -8,10 +8,13 @@
 
 import Foundation
 
-class CurrencyData: Codable {
+class CurrencyData: Codable, Equatable {
     
     var base: String = ""
     var date: String = ""
     var rates: Dictionary = [String: Float]()
-    
+
+    static func == (lhs: CurrencyData, rhs: CurrencyData) -> Bool {
+        return lhs.base == rhs.base && lhs.date == rhs.date && lhs.rates == rhs.rates
+    }
 }

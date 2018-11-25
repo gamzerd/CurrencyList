@@ -15,7 +15,10 @@ class Service: NSObject {
     init(url: String) {
         self.url = url
     }
-    
+    /**
+     * Makes a GET http request to the given path and passes the result to the callback.
+     * field values based on the corresponding rate value in the list.
+     */
     func get<E, D>(path: String, params: E, responseType: D.Type, callback: @escaping (D?, Error?) -> Void) where E: Encodable, D : Decodable {
         
         // build URL

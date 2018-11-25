@@ -8,11 +8,11 @@
 
 import Foundation
 
-class RevolutDataSource: NSObject {
+class RevolutDataSource: DataSource {
     
     var api: Service
     
-    override init() {
+    init() {
         self.api = Service(url: "https://revolut.duckdns.org/")
     }
     
